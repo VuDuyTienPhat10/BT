@@ -1,0 +1,799 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.clear::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* .container {
+    
+} */
+
+.container>.header>.title {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.container>.header>.title>.box {
+    height: 70px;
+    display: flex;
+}
+
+.container>.header>.title>.box>.img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    align-self: center;
+    margin-right: 8px;
+}
+
+.container>.header>.title>.box>.img>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.container>.header>.title>.box>p {
+    font-family: Arial;
+    font-size: 20px;
+    align-self: center;
+}
+
+.container>.header>.title>.box_1 {
+    display: flex;
+    align-items: center;
+}
+
+.container>.header>.title>.box_1>.timedate-phone {
+    display: flex;
+}
+
+.container>.header>.title>.box_1>.timedate-phone>.timedate {
+    margin-right: 30px;
+}
+
+.container>.header>.title>.box_1>.timedate-phone>.timedate>.content {
+    display: flex;
+}
+
+.container>.header>.title>.box_1>.timedate-phone>.timedate>.content>.icon {
+    margin-right: 7px;
+    align-self: center;
+}
+
+.container>.header>.title>.box_1>.timedate-phone>.timedate>.content>.icon>.fa-clock-o {
+    color: blue;
+    font-size: 20px;
+}
+
+.container>.header>.title>.box_1>.timedate-phone>.timedate>.content>.word {
+    font-family: Arial;
+    font-size: 19px;
+}
+
+.container>.header>.title>.box_1>.timedate-phone>.phone>.content {
+    display: flex;
+}
+
+.container>.header>.title>.box_1>.timedate-phone>.phone>.content>.icon {
+    margin-right: 7px;
+    align-self: center;
+}
+
+.container>.header>.title>.box_1>.timedate-phone>.phone>.content>.icon>.fa-phone {
+    color: blue;
+    font-size: 20px;
+}
+
+.container>.header>.title>.box_1>.timedate-phone>.phone>.content>.word {
+    font-family: Arial;
+    font-size: 19px;
+}
+
+.container>.header>.title>.box_1>.block {
+    margin-left: 43px;
+    height: 40px;
+    width: 140px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: Poppins;
+    color: #3d3939;
+    align-items: center;
+    transition: linear 1.5s;
+    transition-timing-function: ease-in-out;
+    font-weight: bold;
+}
+
+.container>.header>.title>.box_1>.block:hover {
+    color: white;
+    background: blue;
+    font-weight: bold;
+}
+
+/* .container>.main {
+    background-color: #363636;
+} */
+
+.container>.main>.menu {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: #363636;
+}
+
+.container>.main>.menu>.list {
+    display: flex;
+    margin-right: 150px;
+}
+
+.container>.main>.menu>.list>li {
+    width: 120px;
+    font-family: Georgia;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    height: 60px;
+    display: flex;
+}
+
+.container>.main>.menu>.list>.hover {
+    position: relative;
+}
+
+.container>.main>.menu>.list>.hover:hover {
+    border-top: 3px solid blue;
+    cursor: pointer;
+}
+
+.container>.main>.menu>.list>.hover>.dropdown {
+    left: 0px;
+    position: absolute;
+    top: 56px;
+    width: 200px;
+    background-color: white;
+    display: none;
+}
+
+.container>.main>.menu>.list>.hover:hover>.dropdown {
+    display: block;
+    border: 1.5px solid black;
+}
+
+.container>.main>.menu>.list>.hover>.dropdown>.menu {
+    color: black;
+    font-family: Gabriola;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 20px;
+}
+
+.container>.main>.menu>.list>li>span {
+    align-self: center;
+    margin: 0 auto;
+}
+
+.container>.main>.menu>.list-icon {
+    display: flex;
+    margin-right: 150px;
+}
+
+.container>.main>.menu>.list-icon>li:hover {
+    border-top: 3px solid blue;
+    cursor: pointer;
+}
+
+.container>.main>.menu>.list-icon>li {
+    width: 70px;
+    height: 60px;
+    display: flex;
+}
+
+.container>.main>.menu>.list-icon>li>.icon {
+    font-size: 25px;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.container>.main>.menu_1>.body {
+    background-image: url('../img/car.jpg');
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    display: flex;
+}
+
+.container>.main>.menu_1>.body>.title {
+    margin: 0 auto;
+    align-self: center;
+}
+
+.container>.main>.menu_1>.body>.title>.tieude>h1 {
+    color: white;
+    font-family: Poppins;
+    font-size: 70px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.container>.main>.menu_1>.body>.title>.tieude>p {
+    color: white;
+    font-family: Poppins;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.container>.main>.menu_1>.body>.title>.select {
+    margin-top: 20px;
+    display: flex;
+    align-self: center;
+}
+
+.container>.main>.menu_1>.body>.title>.select>.option {
+    /* border: 2px solid blue; */
+    height: 20px;
+    width: 210px;
+    margin: 0 15px;
+    height: 50px;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 15px;
+    padding-left: 10px;
+}
+
+.container>.main>.menu_1>.body>.title>.select>.search {
+    background-color: #2C7DD8;
+    color: white;
+    width: 120px;
+    height: 50px;
+    margin-left: 5px;
+    display: flex;
+}
+
+.container>.main>.menu_1>.body>.title>.select>.search>p {
+    font-size: 20px;
+    font-family: Poppins;
+    text-align: center;
+    align-self: center;
+    margin: 0 auto
+}
+
+.container>.main>.content_1 {
+    background: white;
+    width: 100%;
+}
+
+.container>.main>.content_1>.title {
+    display: flex;
+    justify-content: center;
+}
+
+.container>.main>.content_1>.title>h1 {
+    margin-top: 20px;
+    font-family: Poppins
+}
+
+.container>.main>.content_1>.row_1 {
+    display: flex;
+    margin-top: 50px;
+}
+
+.container>.main>.content_1>.row_1:last-child {
+    margin-top: 40px;
+}
+
+.container>.main>.content_1>.row_1>.box {
+    width: 33.33%;
+    margin: 0 25px;
+}
+
+.container>.main>.content_1>.row_1>.box>.picture {
+    width: 100%;
+    height: 250px;
+}
+
+.container>.main>.content_1>.row_1>.box>.picture>img {
+    width: 100%;
+    height: 100%;
+}
+img{
+    transition: all 0.5s ease;
+}
+.container>.main>.content_1>.row_1>.box>.picture>img:hover {
+    /* transform: scale3d(1.1, 1.1, 1.1); */
+    transform: translateY(-5%);
+    width: 100%;
+    height: 100%;
+    padding: 7px;
+    cursor: pointer;
+}
+
+
+.container>.main>.content_1>.row_1>.box>span>a {
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 28px;
+    color: #363636;
+}
+
+.container>.main>.content_1>.row_1>.box>span>p {
+    color: #9BA3BA;
+    font-size: 20px;
+}
+
+.container>.main>.whychoose_us {
+    width: 100%;
+    background: #333333;
+    margin-top: 70px;
+    display: flex;
+    height: 440px;
+}
+
+.container>.main>.whychoose_us>.content {
+    align-self: center;
+    margin: 0 auto;
+}
+
+.container>.main>.whychoose_us>.content>.word {
+    font-weight: bold;
+    font-family: Poppins;
+    color: white;
+    padding: 50px 0px;
+    display: flex;
+}
+
+.container>.main>.whychoose_us>.content>.word>h1 {
+    margin: 0 auto;
+    align-self: center;
+    font-size: 45px;
+}
+
+.container>.main>.whychoose_us>.content>.body {
+    display: flex;
+    margin-top: 15px;
+}
+
+.container>.main>.whychoose_us>.content>.body>.box {
+    border: 1px dotted white;
+    width: 380px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.container>.main>.whychoose_us>.content>.body>.box>.box_1 {
+    border: 1px dotted white;
+    width: 360px;
+    height: 160px;
+    align-self: center;
+    display: flex;
+}
+
+.container>.main>.whychoose_us>.content>.body>.box>.box_1:hover {
+    transform: scale3d(1, 1, 1);
+    width: 380px;
+    height: 180px;
+    transition: 1.5s;
+}
+
+.container>.main>.whychoose_us>.content>.body>.box>.box_1>.noidung {
+    padding: 20px;
+    display: flex;
+}
+
+.container>.main>.whychoose_us>.content>.body>.box>.box_1>.noidung>.icon {
+    margin: 0 10px 0 0;
+}
+
+.container>.main>.whychoose_us>.content>.body>.box>.box_1>.noidung>.icon>.fa {
+    font-size: 40px;
+    color: white;
+}
+
+.container>.main>.whychoose_us>.content>.body>.box>.box_1>.noidung>.char {
+    color: white;
+    font-family: Poppins;
+}
+
+.container>.main>.whychoose_us>.content>.body>.box>.box_1>.noidung>.char>h2 {
+    font-weight: bold;
+}
+
+.container>.main>.whychoose_us>.content>.body>.box>.box_1>.noidung>.char>p {
+    color: #9BA3BA;
+    font-size: 13px;
+}
+
+.container>.main>.popular_car {
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+}
+
+.container>.main>.popular_car>.content {
+    align-self: center;
+    margin: 0 auto;
+}
+
+.container>.main>.popular_car>.content>.title {
+    display: flex;
+    justify-content: center;
+}
+
+.container>.main>.popular_car>.content>.title>h1 {
+    font-weight: bold;
+    color: #3d3939;
+    font-family: Poppins;
+    font-size: 45px
+}
+
+.container>.main>.popular_car>.content>.box {
+    display: flex;
+    margin: 40px;
+}
+
+.container>.main>.popular_car>.content>.box>.box_1 {
+    border: 2px solid black;
+    width: 500px;
+    height: 250px;
+    margin: 0 20px;
+    display: flex;
+}
+
+.container>.main>.popular_car>.content>.box>.box_1:hover>figure>img {
+    transform: none;
+    transition: linear 1s;
+    cursor: pointer;
+}
+
+.container>.main>.popular_car>.content>.box>.box_1>figure {
+    display: flex;
+    height: 220px;
+    justify-content: center;
+    margin: 10px auto 0;
+    width: 240px;
+}
+
+.container>.main>.popular_car>.content>.box>.box_1>figure>img {
+    height: 190px;
+    width: 210px;
+    align-self: center;
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.container>.main>.popular_car>.content>.box>.box_1>.noidung {
+    width: 50%;
+    height: 100%;
+    padding-left: 7px;
+}
+
+.container>.main>.popular_car>.content>.box>.box_1>.noidung>.icon {
+    margin: 30px 20px 10px 0;
+}
+
+.container>.main>.popular_car>.content>.box>.box_1>.noidung>.icon>span>.fa {
+    color: #9B9B9B;
+    font-size: 15px;
+    margin-right: 2px;
+}
+
+.container>.main>.popular_car>.content>.box>.box_1>.noidung>.icon>span {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 5px
+}
+
+.container>.main>.popular_car>.content>.box>.box_1>.noidung>.icon>span:first-child {
+    margin-left: 0px;
+}
+
+.container>.main>.popular_car>.content>.box>.box_1>.noidung>.word>a {
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.container>.main>.popular_car>.content>.box>.box_1>.noidung>.word>a:hover {
+    color: #2C7DD8;
+}
+
+.container>.main>.popular_car>.content>.box>.box_1>.noidung>.word>.price {
+    width: 120px;
+    height: 30px;
+    background: #2C7DD8;
+    position: relative;
+    display: flex;
+}
+
+.container>.main>.popular_car>.content>.box>.box_1>.noidung>.word>.price>.pricecircle {
+    background: white none repeat scroll 0 0;
+    border-radius: 100%;
+    height: 20px;
+    left: -8px;
+    position: absolute;
+    top: 4px;
+    width: 20px;
+    z-index: 1;
+}
+
+.container>.main>.popular_car>.content>.box>.box_1>.noidung>.word>.price>p {
+    color: white;
+    align-self: center;
+    margin: 0 auto;
+    font-weight: 400;
+    font-family: Poppins;
+}
+
+.container>.main>.popular_car>.content>.box>.box_1>.noidung>.word>.price:hover {
+    background-color: #eec924bd;
+    cursor: pointer;
+}
+
+/* .container>.main>.popular_car>.content>.box>.box_1>.noidung>.svg{
+    width: 120px;
+    height: 25px;
+}
+.container>.main>.popular_car>.content>.box>.box_1>.noidung>.svg>svg{
+    width: 100%;
+    height: 100%;
+} */
+
+.container>.main>.findVehicle {
+    width: 100%;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container>.main>.findVehicle>.hinh {
+    margin-top: 30px;
+    margin-bottom: 90px;
+}
+
+.container>.main>.findVehicle>.hinh>.hinhtronlon {
+    background: #f7f7f7 none repeat scroll 0 0;
+    border-radius: 100%;
+    bottom: -60px;
+    height: 150px;
+    left: 50px;
+    position: relative;
+    width: 150px;
+    z-index: 1;
+}
+
+.container>.main>.findVehicle>.hinh>.hinhtronlon>.hinhtronnho {
+    background: white none repeat scroll 0 0;
+    border-radius: 100%;
+    height: 130px;
+    left: 10px;
+    position: absolute;
+    display: flex;
+    width: 130px;
+}
+
+.container>.main>.findVehicle>.hinh>.hinhtronlon>.hinhtronnho>.svg {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.container>.main>.findVehicle>.hinh>.hinhvuong {
+    background: white none repeat scroll 0 0;
+    height: 200px;
+    position: relative;
+    width: 250px;
+    display: flex;
+}
+
+.container>.main>.findVehicle>.hinh>.hinhvuong>.content {
+    width: 250px;
+    height: 120px;
+    align-self: flex-end
+}
+
+.container>.main>.findVehicle>.hinh>.hinhvuong>.content>p {
+    text-align: center;
+    font-family: Poppins;
+}
+
+.container>.main>.findVehicle>.hinh>.hinhvuong>.content>p>b {
+    font-size: 30px;
+}
+
+.container>.main>.findVehicle>.hinh>.hinhvuong>.content>p>span {
+    color: #2C7DD8;
+    font-size: 17px;
+}
+
+.container>.main>.findVehicle>.hinh>.hinhvuong>.content>p>a {
+    font-size: 19px;
+    color: #3d3939
+}
+
+.container>.main>.findVehicle>.hinh>.hinhvuong>.content>p>a:hover {
+    color: #2C7DD8;
+}
+
+.container>.main>.contactus {
+    width: 100%;
+    background: #333333;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container>.main>.contactus>.about_us {
+    font-family: Poppins;
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 100px; 
+}
+
+.container>.main>.contactus>.about_us>.text {
+    margin-top: 20px;
+    display: flex;
+}
+
+.container>.main>.contactus>.about_us>.text>.icon {
+    margin-right: 30px;
+}
+
+.container>.main>.contactus>.about_us>.text>.icon>span>.fa {
+    font-size: 20px;
+    color: #6F6F6F;
+}
+
+.container>.main>.contactus>.about_us>.text>span:hover {
+    color: #2C7DD8;
+    cursor: pointer;
+}
+
+.container>.main>.contactus>.popular_news {
+    font-family: Poppins;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 100px; 
+   
+}
+
+.container>.main>.contactus>.popular_news>.text>.text_1 {
+    margin-top: 20px;
+}
+
+.container>.main>.contactus>.popular_news>.text>.text_1:hover {
+    color: #2C7DD8;
+    cursor: pointer;
+}
+
+.container>.main>.contactus>.popular_news>.text>.text_time {
+    font-size: 14px;
+    color: #66665D
+}
+
+.container>.main>.contactus>.popular_news>.text:last-child {
+    margin-top: 25px;
+}
+
+.container>.main>.contactus>.popular_news>.text>.text_2:hover {
+    color: #2C7DD8;
+    cursor: pointer;
+}
+
+.container>.main>.contactus>.quick_links {
+    font-family: Poppins;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 100px; 
+}
+
+.container>.main>.contactus>.quick_links>.text>li {
+    margin-top: 7px;
+}
+
+.container>.main>.contactus>.quick_links>.text>li>span {
+    margin-right: 10px;
+}
+
+.container>.main>.contactus>.quick_links>.text>li>.word:hover {
+    color: #2C7DD8;
+    cursor: pointer;
+}
+
+.container>.main>.contactus>.quick_links>.text>li:first-child {
+    margin-top: 20px;
+}
+
+.container>.main>.contactus>.quick_links>.text>li>span>.fa {
+    font-size: 10px;
+    color: #6F6F6F;
+}
+
+.container>.main>.contactus>.quick_links>.block {
+    width: 150px;
+    height: 40px;
+    background: #2C7DD8;
+    margin-top: 20px;
+    display: flex;
+}
+.container>.main>.contactus>.quick_links>.block:hover{
+   background:#6F6F6F;
+    cursor: pointer;
+}
+
+.container>.main>.contactus>.quick_links>.block>span {
+    align-self: center;
+    margin: 0 auto;
+}
+.container>.main>.end{
+    background-color: #2E2E2E;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    font-family: Poppins;
+    color: #6F6F6F;
+    
+}
+.container>.main>.end>.block_1{
+    align-self: center
+}
+
+.container>.main>.end>.block_2{
+    display: flex;
+    align-self: center;
+    
+}
+.container>.main>.end>.block_2>li{
+    margin: 0 10px;
+    align-self: center;
+}
+.container>.main>.end>.block_2>li>.fa{
+    font-size: 17px;
+}
+.container>.main>.end>.block_2>li>.fa:hover{
+    color: #2C7DD8;
+    cursor: pointer;
+}
+.container>.main>.end>.block_3{
+    align-self: center;
+}
+.container>.main>.end>.block_3>span:hover{
+    color: #2C7DD8
+    ;
+    cursor: pointer;
+}
+
+
